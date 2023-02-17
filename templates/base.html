@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>    
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index0.css')}}"/>
+    <script type="text/javascript" src="../index0.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/webFinalProject.css')}}"/>
+
+    <script src="{{url_for('static', filename='js外掛/jquery-3.6.0.min.js')}}"></script>
+    <script>
+        var $jQ_360 = jQuery.noConflict(); // 解決外掛衝突
+    </script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    {% endblock head %}
+</head>
+<body>   
+    <div id="Header">
+        <img src="{{url_for('static', filename='pic/朝陽_背景2.jpg')}}" width="100%">
+        <div class="nav">
+            
+        </div>
+    </div>
+    <div class="userSkin">
+        <div class="wrap"> <!-- 整個頭 -->
+            <div class="userHead"></div> <!-- 撐開 與上端距離 -->
+            <div class="user"> <!-- 使用者資訊欄位 -->
+                <div class="userInfo"> <!-- flex 讓裡面的block都橫著走 -->
+                    <div class="user-pro-head"> <!-- (relative) 在欄位上，頭相框要擺的位置 -->
+                        <div class="user-pro-head-pic"> <!-- (absolute top:-12) 頭像外框-要放頭像的地方 -->
+                            <img src="{{url_for('static', filename='pic/yanSyue_2.png')}}" alt="CianJi">
+                        </div>
+                    </div>
+                    <div class="user-pro-info"> <!-- 內容 -->
+                        <div class="user-pro-info-t"> <!-- 一整條 -->
+                            <div class="user-pro-info-name"> <!-- flex 讓裡面的block都橫著走 -->
+                                Bonnie Y.W. Chou
+                            </div>
+                        </div>
+                        <div class="user-pro-info-c"> <!-- 一整條 -->
+                            <ul class="user-pro-info-data">
+                                <li><span>銘傳大學</span><div class="liBar"></div></li>
+                                <li><span>網路媒體設計</span><div class="liBar"></div></li>
+                                <li><span>作業用</span><div class="liBar"></div></li>
+                                <li><span></span></li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>            
+        </div>
+
+        <div id="container" class="container">
+            <div id="Sidebar">
+                <ul>                
+                    {% block liActive1 %}<li><a href="index.html">遊戲介紹</a></li>{% endblock liActive1 %}
+                    {% block liActive2 %}<li><a href="{{url_for('index_Dungeons')}}">普通副本</a></li>{% endblock liActive2 %}
+                    {% block liActive3 %}<li><a href="{{url_for('index_Mythic')}}">M+副本</a></li>{% endblock liActive3 %}
+                </ul>               
+            </div>
+
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){        
+                $("#panel").slideToggle("slow");
+            });        
+        });
+    </script>
+    <script>
+        $jQ_360(document).ready(function(){
+            $jQ_360(document).scroll(function(){
+                var topHight = $jQ_360(document).scrollTop();  //偵測頁面滾動高度
+                height = parseInt(400);  //到此高度時
+                
+                if(topHight < height) {
+                    //#Sidebar是需要固定的元素
+                    $jQ_360("#Sidebar").css({"position":'',"top":''});
+                } else {
+                    //將position設置為fixed
+                    $jQ_360("#Sidebar").css({"position":"fixed", "top":"30px"});
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

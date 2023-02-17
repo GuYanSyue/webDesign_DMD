@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                              
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【M+副本】</p>
+        <br><p class="tit-MsoNormal">魔獸世界 10.0 全新M+副本</p><br>
+        <div class="picBox">
+            <img src="/static/pic/WoWScrnShot_123022_113712.jpg" width="100%">
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <div class="box">
+                <p class="tit-MsoNormal">阿爾蓋薩學院</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Algethar_Academy')}}"><img src="/static/pic/阿爾.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">晶紅生命之池</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Ruby_Life_Pools')}}"><img src="/static/pic/晶紅.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">蒼藍密庫</p><p>&nbsp;</p>
+                <a href="{{url_for('The_Azure_Vault')}}"><img src="/static/pic/蒼藍.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">諾庫德進攻據點</p><p>&nbsp;</p>
+                <a href="{{url_for('The_Nokhud_Offensive')}}"><img src="/static/pic/諾庫.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">影月谷</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Shadowmoon_Burial_Grounds')}}"><img src="/static/pic/蕨皮.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">玉蛟寺</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Temple_of_the_Jade_Serpent')}}"><img src="/static/pic/玉蛟.jpg" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">眾星之廷</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Court_of_Stars')}}"><img src="/static/pic/眾星.jpg" width="80%"></a>
+            </div>         
+            <div class="box">
+                <p class="tit-MsoNormal">英靈殿</p><p>&nbsp;</p>
+                <a href="{{url_for('M_Halls_of_Valor')}}"><img src="/static/pic/英靈.jpg" width="80%"></a>
+            </div>                                          
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

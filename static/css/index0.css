@@ -1,0 +1,274 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #777;
+	background: #f6f6f6;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover,
+a:active {
+	color: #777;
+}
+
+a img {
+	border: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#Header {
+    overflow: hidden;   /*自動隱藏超出的文字或圖片*/
+    height: 220px;
+    background-color: rgb(233, 209, 149);
+}
+#Sidebar {
+    position: sticky;
+    float: left;
+    width: 285px;
+    height: 650px;
+    margin-right: 12px;
+    border-radius: 2px;
+    background-color: rgba(240, 248, 255, 0.792);
+}
+#Body {
+    float: right;
+    width: 850px;
+    min-height: 700px;
+    padding: 20px 20px 200px 20px;
+    border-radius: 2px;
+    background-color: rgba(240, 248, 255, 0.792);
+}
+.footer-top {
+    clear: both;
+    height: 12px;
+}
+#Footer { 
+    max-width: 1200px;
+    height: 90px;
+    border-radius: 2px;
+    background-color: rgba(240, 248, 255, 0.844);
+}
+.nav-t {
+    position: relative;
+    display: inline-block !important; /*置中關鍵*/
+    width: 500px;
+    height: 90px;
+}
+.btn-index {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding-top: 0.25rem;
+    margin-left: 0.5rem;
+    width: 100px;
+    height: 100%;
+    font-family: DFkai-sb, sans-serif;
+}
+
+/*--------------------------------------*/
+.userSkin {
+    overflow: hidden;
+    background-image: url('/static/pic/遮罩_場景設計1-Cianji.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrap {
+    max-width: 1200px;      /*不能刪*/
+    margin: 0 auto;     /*重要div置中*/
+    /*background-color: rgb(143, 188, 143);*/
+}
+/*重要!!撐開wrap*/
+.userHead {
+    max-width: 1200px; 
+    height: 100px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+.user {
+    /*float: left;*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px 0px 50px; /*top right bottom left*/
+    border-radius: 2px;
+    background-color: rgba(240, 248, 255, 0.844);
+}
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+}
+.user-pro-head {
+    position: relative;
+    width: 102px;
+    height: 90px;
+}
+.user-pro-head-pic {
+    position: absolute;
+    top: -12px;
+    width: 102px;
+    height: 102px;
+    border: 4px solid #abc5d8;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+.user-pro-head-pic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.user-pro-info {
+    flex: 1;
+    margin-left: 25px;
+    color: rgb(44, 57, 72);
+}
+.user-pro-info-t {
+    margin-top: 16px;
+}
+.user-pro-info-name {
+    margin-top: 16px;
+    font-size: 22px;
+    line-height: 24px;
+    word-break: break-all;
+    display: flex;
+    align-items: flex-start;
+}
+.user-pro-info-c {
+    margin-top: 10px;
+}
+.user-pro-info-c ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.liBar {
+    width: 1px;
+    height: 16px;
+    background: #7a84c2;
+    margin: 0 16px;
+}
+.user-pro-info-data {
+    display: flex;
+}
+
+.container{  
+    max-width: 1200px;
+    min-height: 700px;
+    /*display: flex;*/
+    overflow: hidden;       /*重要!!不可刪*/
+    padding: 40px 0px 40px 0px;
+    margin: 10px auto 0;
+    font-size: 18px; 
+    /*background-color: rgba(255, 255, 255, 0.904);*/
+}
+
+/*--------------------------------------------------*/
+
+.nav {
+    width: 100%;
+    height: 30px;
+    margin: 1em auto 0;
+    text-align: center;
+}
+.lineBox {
+    /*width: 900px;*/
+    margin: auto; 
+    text-align: center; 
+    margin: 20px 0px 20px 0px;
+}
+.picBox {
+    margin: auto;
+    width: 80%;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#panel {
+  padding: 10px;
+  display: none;
+}
+.tit-MsoNormal {
+    font-size: 22px;
+    line-height: 26px;
+    color: rgb(64, 64, 64);
+    margin: 20px 0px 20px 0px;
+}
+.MsoNormal {
+    text-align: left;
+    width: 100%;
+    line-height: 26px;
+    margin: 10px 0px 10px 0px; 
+}
+.box {
+    width: 50%;
+    float: left;
+    margin: 20px 0px 20px 0px;
+}
+.titBox {
+    width: 100%;
+    padding: 5px;
+    margin: 40px 0px 40px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(128, 128, 128, 0.795);
+    background-color: #43837853;
+    color: #474e64;
+}
+
+/*-----------------------------------------------*/
+#panel .btn-box {
+    width: 100%;
+    display: block;
+}
+#panel .btn {
+    border: 2px solid;
+    border-radius: 8px;
+    width: 20%;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgba(255, 166, 0, 0.244);
+    box-shadow: 2px 2px 2px darkslategrey;
+}
+.btn-box a:link, .btn-box a:visited {
+    color: rgb(5, 59, 46);    /*超連結字體顏色*/
+    text-decoration: none
+}
+#panel .btn-box a:hover{
+    color: rgb(247, 197, 137);     /*滑鼠停在超連結中文字的顏色*/
+    background-color: rgb(60, 92, 23);   /*滑鼠停留在超連結中文字的底色*/
+    text-decoration: none; 
+}
+.btn-box a.active {
+    border: 2px solid;
+    border-radius: 8px;
+    width: 20%;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 2px darkslategrey;
+    background-color: #438378;
+    color: white;
+}

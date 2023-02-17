@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block liActive2 %}
+<li><a class="active" href="{{url_for('index_Dungeons')}}">普通副本</a></li>
+{% endblock liActive2 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('Algethar_Academy')}}">阿爾蓋薩學院</a>                     
+                <a class="btn" href="{{url_for('Brackenhide_Hollow')}}">蕨皮谷</a>
+                <a class="btn" href="{{url_for('Halls_of_Infusion')}}">灌注迴廊</a>
+                <a class="btn" href="{{url_for('Neltharus')}}">奈薩魯斯堡</a>                      
+                <a class="active">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('The_Nokhud_Offensive')}}">諾庫德進攻據點</a>
+                <a class="btn" href="{{url_for('Uldaman_Legacy_of_Tyr')}}">奧達曼: 提爾的遺產</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．五人副本】</p>
+        <p class="tit-MsoNormal">「晶紅生命之池」</p><br>
+        <div class="picBox">   
+            <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+            <p class="MsoNormal">
+                閃地板招。(腳下白圈)中了招務必離開人群，遠一點，招式後勁很大。
+            </p>    
+            <p class="MsoNormal">
+                選一隻龍坐上去。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">二王</p>
+            <p class="MsoNormal">
+                火元素出來先打，會場邊AE。地板躲好躲滿。(有一隻法師別拉到了。)
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">三王</p>
+            <p class="MsoNormal">
+                三個階段。第一階段龍人分開，先揍人，不要站龍的嘴前，會噴火。(頭頂有提前文字)中了「烈焰噴濺」，腳下大範圍爆發一堆火漩渦。龍:「X X 焰息」= 直線噴火。<br>
+                二階段，到一定血量會騎龍，打龍、不要面對龍嘴、躲地板。三階段，龍死人下來，打人。
+            </p> 
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

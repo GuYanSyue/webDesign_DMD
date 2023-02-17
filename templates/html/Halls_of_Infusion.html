@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block liActive2 %}
+<li><a class="active" href="{{url_for('index_Dungeons')}}">普通副本</a></li>
+{% endblock liActive2 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('Algethar_Academy')}}">阿爾蓋薩學院</a>                     
+                <a class="btn" href="{{url_for('Brackenhide_Hollow')}}">蕨皮谷</a>
+                <a class="active">灌注迴廊</a>
+                <a class="btn" href="{{url_for('Neltharus')}}">奈薩魯斯堡</a>                       
+                <a class="btn" href="{{url_for('Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('The_Nokhud_Offensive')}}">諾庫德進攻據點</a>
+                <a class="btn" href="{{url_for('Uldaman_Legacy_of_Tyr')}}">奧達曼: 提爾的遺產</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．五人副本】</p>
+        <p class="tit-MsoNormal">「灌注迴廊」</p><br>
+        <div class="picBox">   
+            <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+            <p class="MsoNormal">
+                一王泰坦巨人。坦克拉王召喚的小球在王旁邊時，其他DD再打死，小球死後的爆炸會把王的無敵頓打掉。
+            </p>    
+            <p class="MsoNormal">
+                路上時有小角蛙，無仇恨。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">二王</p>
+            <p class="MsoNormal">
+                一隻青蛙，隨機盯一個人，那個被盯得要給王追著跑，不要被抓到。小角蛙會追人，直接幹掉。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">三王</p>
+            <p class="MsoNormal">
+                AE「冰風暴」躲冰塊，盡量不要站兩個人，不要躲離冰塊太近(冰碎裂)。特殊地板技能「冰川猛擊」，一圈一圈往外擴散，中間先一圈，接下來中間不見往外擴散，那人就向中間躲。<br>
+                技能有可能會連續施放，「冰川猛擊」完馬上就「冰風暴」。
+            </p> 
+            <p class="MsoNormal">
+                經過一個長廊，開始會看到對面有兩道水柱沖過來，往後站一點就好，之後會繼續衝過來，左右閃躲就好。到盡頭那個在上面噴水的人會下來。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+            <p class="MsoNormal">
+                怪怪的東西不要踩、也不要碰到。第二階段，隨機拉人到走道另一端去，跑回來時就是要躲長廊剛剛那個波浪。
+            </p> 
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

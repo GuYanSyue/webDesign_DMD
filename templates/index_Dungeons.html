@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block liActive2 %}
+<li><a class="active" href="{{url_for('index_Dungeons')}}">普通副本</a></li>
+{% endblock liActive2 %}
+{% block content %}
+<div id="Body">                              
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本】</p>
+        <br><p class="tit-MsoNormal">魔獸世界 10.0 全新五人副本</p><br>
+        <div class="picBox">
+            <img src="{{url_for('static', filename='pic/WoWScrnShot_123022_114231.jpg')}}" width="100%">
+            <p>&nbsp;</p><p>&nbsp;</p>
+            <div class="box">
+                <p class="tit-MsoNormal">阿爾蓋薩學院</p><p>&nbsp;</p>
+                <a href="{{url_for('Algethar_Academy')}}"><img src="{{url_for('static', filename='pic/阿爾.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">蕨皮谷</p><p>&nbsp;</p>
+                <a href="{{url_for('Brackenhide_Hollow')}}"><img src="{{url_for('static', filename='pic/蕨皮.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">灌注迴廊</p><p>&nbsp;</p>
+                <a href="{{url_for('Halls_of_Infusion')}}"><img src="{{url_for('static', filename='pic/灌注.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">奈薩魯斯堡</p><p>&nbsp;</p>
+                <a href="{{url_for('Neltharus')}}"><img src="{{url_for('static', filename='pic/奈薩.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">晶紅生命之池</p><p>&nbsp;</p>
+                <a href="{{url_for('Ruby_Life_Pools')}}"><img src="{{url_for('static', filename='pic/晶紅.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">蒼藍密庫</p><p>&nbsp;</p>
+                <a href="{{url_for('The_Azure_Vault')}}"><img src="{{url_for('static', filename='pic/蒼藍.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">諾庫德進攻據點</p><p>&nbsp;</p>
+                <a href="{{url_for('The_Nokhud_Offensive')}}"><img src="{{url_for('static', filename='pic/諾庫.jpg')}}" width="80%"></a>
+            </div>
+            <div class="box">
+                <p class="tit-MsoNormal">奧達曼: 提爾的遺產</p><p>&nbsp;</p>
+                <a href="{{url_for('Uldaman_Legacy_of_Tyr')}}"><img src="{{url_for('static', filename='pic/奧達.jpg')}}" width="80%"></a>
+            </div>                                          
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

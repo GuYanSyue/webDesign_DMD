@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('M_Algethar_Academy')}}">阿爾蓋薩學院</a>
+                <a class="btn" href="{{url_for('M_Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('M_The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('M_The_Nokhud_Offensive')}}">諾庫德進攻據點</a>                       
+                <a class="btn" href="{{url_for('M_Shadowmoon_Burial_Grounds')}}">影月谷</a>
+                <a class="btn" href="{{url_for('M_Temple_of_the_Jade_Serpent')}}">玉蛟寺</a>
+                <a class="btn" href="{{url_for('M_Court_of_Stars')}}">眾星之庭</a>                                      
+                <a class="active" href="{{url_for('M_Halls_of_Valor')}}">英靈殿</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．M+副本】</p>
+        <p class="tit-MsoNormal">「英靈殿」</p><br>
+        <div class="picBox">
+            <p class="MsoNormal">
+                入口處關哨塔，往左邊的橋走，小怪要【斷法】「充能站」、「抑制」。
+                <br>右轉小房間旁有第二個哨塔，不要引到左邊的怪。走哨塔與房間的夾縫，清眼前房間怪，右手邊上橋清怪。
+            </p>    
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+                <p class="MsoNormal">
+                    地板傷很多，範圍有一定距離，顏色與地板非常相近。打一王不要往裡跑，左右兩邊會引到怪，裡面有遊走的怪。
+                    <br>打完直衝中間圓形(小心圓形前的怪)，後右轉。
+                </p>
+            </div>
+            <p class="MsoNormal">
+                門口處怪打掉，進去上樓梯，右轉下樓梯。
+                <br>出去後有小王要 *卡視角。
+            </p>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">二王</p>
+                <p class="MsoNormal">
+                    集中站，王會釋放小怪較好清。
+                </p>
+            </div>
+            <p class="MsoNormal">
+                打完找npc對話變身，室內小地圖有黃點去找線索，找到惡魔後小地圖會有閃爍的點，跟著走。
+            </p>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+                <p class="MsoNormal">
+                    遠程站遠點(王可以定點施放在最遠玩家那)，閃地板。
+                </p> 
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

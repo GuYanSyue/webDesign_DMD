@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('M_Algethar_Academy')}}">阿爾蓋薩學院</a>
+                <a class="btn" href="{{url_for('M_Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('M_The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('M_The_Nokhud_Offensive')}}">諾庫德進攻據點</a>                       
+                <a class="btn" href="{{url_for('M_Shadowmoon_Burial_Grounds')}}">影月谷</a>
+                <a class="active" href="{{url_for('M_Temple_of_the_Jade_Serpent')}}">玉蛟寺</a>
+                <a class="btn" href="{{url_for('M_Court_of_Stars')}}">眾星之庭</a>                                      
+                <a class="btn" href="{{url_for('M_Halls_of_Valor')}}">英靈殿</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．五人副本】</p>
+        <p class="tit-MsoNormal">「諾庫德進攻據點」</p><br>
+        <div class="picBox">   
+            <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+            <p class="MsoNormal">
+                一條龍，「X X 踐踏」地板有土色圈圈時，遠離。王進爆發，旁邊發光投石機對它打，暈眩王斷AE。
+            </p>    
+            <p class="MsoNormal">
+                開龍飛，空降黃點上清小怪。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">二王</p>
+            <p class="MsoNormal">
+                巨大元素王。腳下大藍圈不要互相炸到就好。地上球記得吃，增加傷害。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">三王</p>
+            <p class="MsoNormal">
+                兩隻半人馬，小隻隨機點人打。地上有一個透明的圈，是小隻即將跳躍的定點。躲一堆龍捲風(小隻釋放的)。被鎖定認命等待坦克拉怪。
+            </p> 
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+            <p class="MsoNormal">
+                大型人馬。(頭頂有文字) 隨機對玩家施放「鋼鐵之茅」，丟茅擊飛玩家，然後它就會衝去撿它的茅，拿完茅轉接段，4隻小怪盡快清掉(王會不斷AE)。躲地板招<br>
+                二階段完，王把茅拋出去後，會把所有人拉到它面前，要用跑的技能離開，要不然會來不及，王會向前衝鋒。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

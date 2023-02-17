@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="active" href="{{url_for('M_Algethar_Academy')}}">阿爾蓋薩學院</a>
+                <a class="btn" href="{{url_for('M_Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('M_The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('M_The_Nokhud_Offensive')}}">諾庫德進攻據點</a>                       
+                <a class="btn" href="{{url_for('M_Shadowmoon_Burial_Grounds')}}">影月谷</a>
+                <a class="btn" href="{{url_for('M_Temple_of_the_Jade_Serpent')}}">玉蛟寺</a>
+                <a class="btn" href="{{url_for('M_Court_of_Stars')}}">眾星之庭</a>                                      
+                <a class="btn" href="{{url_for('M_Halls_of_Valor')}}">英靈殿</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．M+副本】</p>
+        <p class="tit-MsoNormal">「阿爾蓋薩學院」</p><br>
+        <div class="picBox">
+            <p class="MsoNormal">
+                進副本前有5隻龍可以拿Buff，挑選一個。
+            </p>
+            <div class="titBox">  
+                <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+                <p class="MsoNormal">
+                    隊伍散開，它有一技能對玩家周圍造成傷害(腳下一個圈圈，後爆炸留一攤)。<br>
+                    有「祕法光球」，不要給王吃到。不要站在王面前，它會噴一直線光束(魔爆術)。
+                </p>
+            </div>     
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">二王</p>
+                <p class="MsoNormal">
+                    一棵樹，隊伍集中，會在玩家腳下種一棵樹，清的時候較方便。<br>
+                    *優先清掉種子。沒清完第二階段變小樹人。<br>
+                    中途會放一隻中怪，要【打斷】它的「治療術」，*優先擊殺。
+                </p>
+            </div>
+            <p class="MsoNormal">
+                去三王的路上會遇到一隻怪，周圍有三根柱子牆壁，需要卡著牆刷，或跑離開它的範圍，會被龍捲風技能吹飛。
+            </p>
+            <p class="MsoNormal">
+                再會遇到一隻 鳥，場上有小光球和一火一風左右兩個範圍，球丟火門(3顆)。
+            </p>
+            <p class="MsoNormal">
+                邊邊小龍不要A到。<br>
+                【斷法】紫元素「潰法力場」(減少mp)。<br>
+                【斷法】書「照本宣科」(睡眠狀態)。<br>
+                上樓梯後，不要引到大路上巡邏怪，進房間清。
+            </p>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+                <p class="MsoNormal">
+                    隊伍散開，對隨機玩家施放技能，對玩家周圍造成傷害(腳下有圈，跑遠再回來)。吸的技能，跑開就好。龍類的吐息，一直線，記得閃。
+                </p>
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

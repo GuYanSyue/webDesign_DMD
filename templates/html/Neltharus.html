@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block liActive2 %}
+<li><a class="active" href="{{url_for('index_Dungeons')}}">普通副本</a></li>
+{% endblock liActive2 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('Algethar_Academy')}}">阿爾蓋薩學院</a>                     
+                <a class="btn" href="{{url_for('Brackenhide_Hollow')}}">蕨皮谷</a>
+                <a class="btn" href="{{url_for('Halls_of_Infusion')}}">灌注迴廊</a>
+                <a class="active">奈薩魯斯堡</a>                       
+                <a class="btn" href="{{url_for('Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('The_Nokhud_Offensive')}}">諾庫德進攻據點</a>
+                <a class="btn" href="{{url_for('Uldaman_Legacy_of_Tyr')}}">奧達曼: 提爾的遺產</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．五人副本】</p>
+        <p class="tit-MsoNormal">「奈薩魯斯堡」</p><br>
+        <div class="picBox">   
+            <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+            <p class="MsoNormal">
+                一王會放三個技能，「熔岩波」就一顆球，躲掉就好。王跳躍技能閃不掉，隊伍分散站。「接地長茅」隨機對玩家施放，玩家身上會有一條鎖鏈，坦克要把王拉到鎖鏈上，利用王的技能砍斷鎖鏈。打斷會有全場AE。
+            </p>    
+            <p class="MsoNormal">
+                路上時有小角蛙，無仇恨。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">二王</p>
+            <p class="MsoNormal">
+                二王敲鐵鎚(加熱武器)，全場AE傷害，每回加熱傷害越高。(頭上有箭頭)對玩家放地板 X 型傷害，從玩家腳下擴散 X 型，別亂跑。對坦克擊飛後跳過去攻擊。
+            </p>
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">三王</p>
+            <p class="MsoNormal">
+                隊伍散開。三王熔岩大象，一個致命技能要躲開，中了「熾烈衝鋒」王會轉身，2秒內馬上跑開，王衝鋒撞牆後，地板會有岩漿球放射狀滾過來，閃開就好。對著一個目標噴火，閃不掉。
+            </p> 
+            <p>&nbsp;</p><p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+            <p class="MsoNormal">
+                不要面對王站，它面前有AE技能。對玩家丟地板一攤岩漿，離開就好。出一隻小怪隨機盯一個玩家，打掉就好。王會開護盾，地板會有金幣可以撿，可以多一個額外技能。
+            </p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

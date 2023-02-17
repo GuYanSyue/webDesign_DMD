@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('M_Algethar_Academy')}}">阿爾蓋薩學院</a>
+                <a class="btn" href="{{url_for('M_Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="active" href="{{url_for('M_The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('M_The_Nokhud_Offensive')}}">諾庫德進攻據點</a>                       
+                <a class="btn" href="{{url_for('M_Shadowmoon_Burial_Grounds')}}">影月谷</a>
+                <a class="btn" href="{{url_for('M_Temple_of_the_Jade_Serpent')}}">玉蛟寺</a>
+                <a class="btn" href="{{url_for('M_Court_of_Stars')}}">眾星之庭</a>                                      
+                <a class="btn" href="{{url_for('M_Halls_of_Valor')}}">英靈殿</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．五人副本】</p>
+        <p class="tit-MsoNormal">「蒼藍密庫」</p><br>
+        <div class="picBox">   
+            <p class="MsoNormal">
+                閃小怪不要被偵測到。<br>
+                或者從左邊平台跳下去。
+            </p>
+            <div class="titBox"> 
+                <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+                <p class="MsoNormal">
+                    一王會叫出樹分散在周圍，(頭頂有提前文字，身上會轉一個白圈) 中了「爆炸烙印」，要站在樹的地方把樹炸掉。
+                </p>
+            </div>   
+            <p class="MsoNormal">
+                不要被偵測到。小怪偵測圈圈範圍由小變大。<br>
+                點書，傳到下一層。
+            </p>
+            
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">二王</p>
+                <p class="MsoNormal">
+                    不要站太遠也不要貼近。發射一直線大光球(就是不要站王面前打)。先清小怪。AE 放射狀噴球，位置不固定，繞著跑閃開。
+                </p>
+            </div>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">三王</p>
+                <p class="MsoNormal">
+                    所有人腳下一個白色圈圈且到計時3秒，站在內圈(就是大家要放在同一邊)，等待計時完腳下釋放一攤有傷害白色物質，留一邊走道可以站。<br>
+                    二階段王跑到中間AE，要躲在地板有個藍色圈圈發光的地方(無論腳下有無白色物質)。
+                </p> 
+            </div>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">尾王</p>
+                <p class="MsoNormal">
+                    *定點攻擊，能不要就不要動!! (緩速debuff)<br>
+                    一條龍，老樣子一條線吐息。場上自爆水晶先清掉。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}

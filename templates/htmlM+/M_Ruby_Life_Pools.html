@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block liActive3 %}
+<li><a class="active" href="{{url_for('index_Mythic')}}">M+副本</a></li>
+{% endblock liActive3 %}
+{% block content %}
+<div id="Body">                
+    <div class="lineBox">
+        <div id="flip">Click to slide panel</div>
+        <div id="panel">
+            <div class="btn-box">  
+                <a class="btn" href="{{url_for('M_Algethar_Academy')}}">阿爾蓋薩學院</a>
+                <a class="active" href="{{url_for('M_Ruby_Life_Pools')}}">晶紅生命之池</a>
+                <a class="btn" href="{{url_for('M_The_Azure_Vault')}}">蒼藍密庫</a>
+                <a class="btn" href="{{url_for('M_The_Nokhud_Offensive')}}">諾庫德進攻據點</a>                       
+                <a class="btn" href="{{url_for('M_Shadowmoon_Burial_Grounds')}}">影月谷</a>
+                <a class="btn" href="{{url_for('M_Temple_of_the_Jade_Serpent')}}">玉蛟寺</a>
+                <a class="btn" href="{{url_for('M_Court_of_Stars')}}">眾星之庭</a>                                      
+                <a class="btn" href="{{url_for('M_Halls_of_Valor')}}">英靈殿</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineBox">
+        <p class="tit-MsoNormal">【遊戲副本．M+副本】</p>
+        <p class="tit-MsoNormal">「晶紅生命之池」</p><br>
+        <div class="picBox">
+            <p class="MsoNormal">
+                大石頭怪，有盜賊可群隱跳怪。<br>
+                【打斷】織寒者「寒冰護盾」。<br>
+                小心地板水池裡[龍蛋]不要踩到了。
+            </p>
+            <div class="titBox">   
+                <p class="tit-MsoNormal" style="text-align: left;">一王</p>
+                <p class="MsoNormal">
+                    閃地板招。(腳下白圈)中了招務必離開人群，遠一點，招式後勁很大。
+                </p>
+            </div>    
+            <p class="MsoNormal">
+                選一隻龍坐上去。<br>
+                龍怪，躲好吐息。<br>
+                【打斷】織燼者「餘燼箭」。<br>
+            </p>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">二王</p>
+                <p class="MsoNormal">
+                    火元素出來先打，會場邊AE。地板躲好躲滿。(有一隻法師別拉到了。)
+                </p>
+            </div>
+            <p class="MsoNormal">
+                【打斷】魔導師「雷霆箭」。<br>
+                【打斷】傳導者「爍火」。<br>
+                【打斷】大魔法師 AOE「震爆」。<br>
+            </p>
+            <div class="titBox">
+                <p class="tit-MsoNormal" style="text-align: left;">三王</p>
+                <p class="MsoNormal">
+                    三個階段。第一階段龍人分開，先揍人，不要站龍的嘴前，會噴火。(頭頂有提前文字)中了「烈焰噴濺」，腳下大範圍爆發一堆火漩渦。龍:「X X 焰息」= 直線噴火。<br>
+                    二階段，到一定血量會騎龍，打龍、不要面對龍嘴、躲地板。三階段，龍死人下來，打人。
+                </p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-top"></div>
+<!--<div id="Footer">Footer 欄位</div>     -->
+{% endblock content %}
