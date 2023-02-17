@@ -59,7 +59,7 @@
         <div id="container" class="container">
             <div id="Sidebar">
                 <ul>                
-                    {% block liActive1 %}<li><a href="index.html">遊戲介紹</a></li>{% endblock liActive1 %}
+                    {% block liActive1 %}<li><a href="{{url_for('index')}}">遊戲介紹</a></li>{% endblock liActive1 %}
                     {% block liActive2 %}<li><a href="{{url_for('index_Dungeons')}}">普通副本</a></li>{% endblock liActive2 %}
                     {% block liActive3 %}<li><a href="{{url_for('index_Mythic')}}">M+副本</a></li>{% endblock liActive3 %}
                 </ul>               

@@ -1,6 +1,10 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+@app.route('/home') #Flask路由指向 網址的根目錄
+def index():
+    return render_template('index.html')
 
 @app.route('/') #Flask路由指向 網址的根目錄
 def index_Dungeons():
